@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5d5e3a4577010d46bd6795dadd78c50, type: 3}
+  m_Name: GerryStats
+  m_EditorClassIdentifier: 
+  characterName: Gerry
+  maxHealth: 100
+  damage: 10
+  portrait: {fileID: -4599017874624594325, guid: f0a14dc7546615148a922a86e10aa56f, type: 3}
+  skillStats:
+  - {fileID: 11400000, guid: 81dd430a9d5fac2409faf7365fe8c644, type: 2}
+  - {fileID: 11400000, guid: 86ee3612372ecbc4cb011af991047937, type: 2}
+  - {fileID: 11400000, guid: 9af362a3a95e3d74db7d8575a2a02a14, type: 2}
+  - {fileID: 11400000, guid: a33c4b82aee8bb14abbb10628b545f4c, type: 2}

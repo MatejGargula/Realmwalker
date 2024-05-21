@@ -1,0 +1,19 @@
+.skill-button {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    overflow: visible;
+    transition-duration: 0.1s;
+}
+
+.button-icon {
+    width: 100%;
+    height: 100%;
+    flex-grow: 0;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    align-items: auto;
+    flex-direction: column;
+}

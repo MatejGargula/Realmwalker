@@ -1,0 +1,74 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance"
+         engine="UnityEngine.UIElements" editor="UnityEditor.UIElements"
+         noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Resources/Views/BlackboardStyle.uss?fileID=7433441132597879392&amp;guid=bb5fc4dcd3c7a3d43975712b6dad9d02&amp;type=3#BlackboardStyle"/>
+    <ui:VisualElement name="blackboard-view-root" style="width: 100%; height: 100%;">
+        <ui:VisualElement name="blackboard-title-label-panel" class="blackboard-title-label-panel" style="width: 100%;">
+            <ui:Label text="Blackboard" display-tooltip-when-elided="true" name="blackboard-title-label"
+                      class="blackboard-title-label"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="blackboard-editor" style="flex-grow: 1; flex-direction: row;">
+            <ui:VisualElement name="left-panel" style="width: 110px; min-width: 80px; max-width: 90px;">
+                <ui:VisualElement name="blackboard-select-buttons" style="flex-grow: 1;">
+                    <ui:Button text="Numeric properties" display-tooltip-when-elided="true"
+                               name="blackboard-select-numeric-properties-button"
+                               class="select-properties-list-button"/>
+                    <ui:Button display-tooltip-when-elided="true" name="blackboard-select-boolean-properties-button"
+                               text="Boolean properties" class="select-properties-list-button"/>
+                    <ui:Button display-tooltip-when-elided="true" name="blackboard-select-string-properties-button"
+                               text="String properties" class="select-properties-list-button"/>
+                    <ui:Button display-tooltip-when-elided="true" name="blackboard-select-vector3-properties-button"
+                               text="Vector3 properties" class="select-properties-list-button"/>
+                    <ui:Button display-tooltip-when-elided="true" name="blackboard-select-gameobject-properties-button"
+                               text="Game object properties" class="select-properties-list-button"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="right-panel" picking-mode="Ignore" style="width: 100%;">
+                <ui:VisualElement name="list-numeric-container"
+                                  style="flex-direction: column; position: absolute; left: 0; top: 0; right: 0; bottom: 0; display: flex;">
+                    <ui:VisualElement name="list-header" class="balckboard-list-header">
+                        <ui:Label text="&#x9;Numeric Properties" display-tooltip-when-elided="true" name="list-name"
+                                  class="blackboard-list-header-name"/>
+                    </ui:VisualElement>
+                    <ui:ListView focusable="true" name="numeric-property-list" class="blackboard-property-list"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="list-bool-container"
+                                  style="flex-direction: column; position: absolute; left: 0; top: 0; right: 0; bottom: 0; display: none;">
+                    <ui:VisualElement name="list-header" class="balckboard-list-header">
+                        <ui:Label text="&#x9;Boolean Properties" display-tooltip-when-elided="true" name="list-name"
+                                  class="blackboard-list-header-name"/>
+                    </ui:VisualElement>
+                    <ui:ListView focusable="true" name="boolean-property-list" class="blackboard-property-list"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="list-string-container"
+                                  style="flex-direction: column; position: absolute; left: 0; top: 0; right: 0; bottom: 0; display: none;">
+                    <ui:VisualElement name="list-header" class="balckboard-list-header">
+                        <ui:Label text="&#x9;String Properties" display-tooltip-when-elided="true" name="list-name"
+                                  class="blackboard-list-header-name"/>
+                    </ui:VisualElement>
+                    <ui:ListView focusable="true" name="string-property-list" class="blackboard-property-list"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="list-vector3-container"
+                                  style="flex-direction: column; position: absolute; left: 0; top: 0; right: 0; bottom: 0; display: none;">
+                    <ui:VisualElement name="list-header" class="balckboard-list-header">
+                        <ui:Label text="&#x9;Vector3 Properties" display-tooltip-when-elided="true" name="list-name"
+                                  class="blackboard-list-header-name"/>
+                    </ui:VisualElement>
+                    <ui:ListView focusable="true" name="vector3-property-list" class="blackboard-property-list"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="list-gameobject-container"
+                                  style="flex-direction: column; position: absolute; left: 0; top: 0; right: 0; bottom: 0; display: none;">
+                    <ui:VisualElement name="list-header" class="balckboard-list-header">
+                        <ui:Label text="&#x9;Game object Properties" display-tooltip-when-elided="true" name="list-name"
+                                  class="blackboard-list-header-name"/>
+                    </ui:VisualElement>
+                    <ui:ListView focusable="true" name="gameobject-property-list" class="blackboard-property-list"/>
+                </ui:VisualElement>
+                <ui:Button display-tooltip-when-elided="true" name="create-button"
+                           class="blackboard-list-header-create-button">
+                    <ui:Label text="+" display-tooltip-when-elided="true" style="bottom: 1px;"/>
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

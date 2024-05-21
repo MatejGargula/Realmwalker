@@ -1,0 +1,20 @@
+.menu-button {
+    width: 120px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 10px;
+    white-space: normal;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    transition-duration: 0.1s;
+    margin-bottom: 1px;
+    color: rgb(255, 255, 255);
+}
+
+.menu-button:hover {
+    rotate: 4deg;
+    font-size: 12px;
+    height: 25px;
+}

@@ -1,0 +1,29 @@
+.property-root-container {
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left-color: rgba(0, 0, 0, 255);
+    border-right-color: rgba(0, 0, 0, 255);
+    border-top-color: rgba(0, 0, 0, 255);
+    border-bottom-color: rgba(0, 0, 0, 255);
+    background-color: rgba(24, 24, 24, 255);
+}
+
+.property-name-label {
+    flex-grow: 1;
+    -unity-text-align: middle-center;
+}
+
+.property-value-field {
+    flex-grow: 1;
+}
+
+/*FloatInput{*/
+/*    max-width: 10px;*/
+/*}*/

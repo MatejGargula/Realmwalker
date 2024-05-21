@@ -1,0 +1,83 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance"
+         engine="UnityEngine.UIElements" editor="UnityEditor.UIElements"
+         noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/Views/Combat/CombatStyle.uss?fileID=7433441132597879392&amp;guid=c6fe942ee47e6ec41a69000d77ab7d57&amp;type=3#CombatStyle"/>
+    <ui:VisualElement name="combat-root" style="flex-grow: 1; width: 100%; height: 100%;">
+        <ui:VisualElement name="top-panel"
+                          style="height: auto; flex-direction: row; flex-grow: 1; justify-content: center;">
+            <ui:VisualElement name="left" class="skill-queue-panel" style="justify-content: flex-end;">
+                <ui:ListView focusable="true" name="queue-1" selection-type="None" virtualization-method="FixedHeight"
+                             fixed-item-height="50" show-bound-collection-size="false" show-border="false"
+                             show-foldout-header="false" show-add-remove-footer="false" reorderable="false"
+                             class="skill-queue"/>
+                <ui:ListView focusable="true" name="queue-2" selection-type="None" virtualization-method="FixedHeight"
+                             fixed-item-height="50" show-bound-collection-size="false" show-foldout-header="false"
+                             show-add-remove-footer="false" reorderable="false" class="skill-queue"/>
+                <ui:ListView focusable="true" name="queue-3" selection-type="None" fixed-item-height="50"
+                             show-bound-collection-size="false" show-add-remove-footer="false" reorderable="false"
+                             show-foldout-header="false" class="skill-queue"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="mid" style="width: 10%;">
+                <ui:VisualElement name="turn-counter"
+                                  style="background-color: rgb(79, 79, 79); height: 100px; flex-grow: 0; flex-direction: row; border-left-width: 5px; border-right-width: 5px; border-top-width: 5px; border-bottom-width: 5px; border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);">
+                    <ui:Label text="TURN COUNTER" display-tooltip-when-elided="true"
+                              style="-unity-text-align: middle-center; flex-grow: 1; font-size: 15px; white-space: normal;"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="right" class="skill-queue-panel" style="flex-grow: 1; width: 45%;">
+                <ui:ListView focusable="true" name="queue-enemy-1" selection-type="None"
+                             show-bound-collection-size="false" fixed-item-height="50" class="skill-queue mirrored"/>
+                <ui:ListView focusable="true" name="queue-enemy-2" selection-type="None"
+                             show-bound-collection-size="false" fixed-item-height="50" class="skill-queue mirrored"/>
+                <ui:ListView focusable="true" name="queue-enemy-3" selection-type="None"
+                             show-alternating-row-backgrounds="None" show-bound-collection-size="false"
+                             fixed-item-height="50" class="skill-queue mirrored"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="bottompanel"
+                          style="flex-grow: 1; flex-direction: row; justify-content: center; align-items: flex-end;">
+            <ui:Button text="X" display-tooltip-when-elided="true" name="cancel-button"
+                       style="width: 70px; height: 70px; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; padding-left: 15px; padding-right: 15px; padding-top: 15px; padding-bottom: 15px; border-left-color: rgb(55, 55, 55); border-right-color: rgb(55, 55, 55); border-top-color: rgb(55, 55, 55); border-bottom-color: rgb(55, 55, 55); border-left-width: 3px; border-right-width: 3px; border-top-width: 3px; border-bottom-width: 3px; border-top-left-radius: 8px; border-bottom-left-radius: 8px; border-top-right-radius: 8px; border-bottom-right-radius: 8px; font-size: 53px; position: absolute;"/>
+            <ui:VisualElement name="buttons-panel" class="buttons-panel"
+                              style="background-image: none; transition-duration: 0.2s; height: 90px; width: 300px; justify-content: flex-start; align-items: center; background-color: rgb(26, 26, 26); border-left-width: 4px; border-right-width: 4px; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; flex-direction: column; padding-left: 10px;">
+                <ui:VisualElement name="decoration"
+                                  style="width: 310px; height: 4px; background-color: rgb(0, 0, 0); border-left-width: 4px; border-right-width: 4px; border-top-width: 4px; border-bottom-width: 4px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); top: -6px; left: -5px;"/>
+                <ui:VisualElement name="buttons"
+                                  style="flex-direction: row; justify-content: center; align-items: center; position: absolute; left: 0; top: 0; right: 0; bottom: 0;">
+                    <ui:VisualElement name="button-group-1" class="button-group">
+                        <Realmwalker.UI.Controls.SkillButton name="skill-button-1"
+                                                             class="skill-button combat-skill-button"/>
+                        <Realmwalker.UI.Controls.SkillDetail name="skill-detail-1" picking-mode="Ignore"
+                                                             class="skill-detail"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="button-group-2" class="button-group">
+                        <Realmwalker.UI.Controls.SkillButton name="skill-button-2"
+                                                             class="skill-button combat-skill-button"/>
+                        <Realmwalker.UI.Controls.SkillDetail name="skill-detail-2" picking-mode="Ignore"
+                                                             focusable="false" class="skill-detail"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="button-group-3" class="button-group">
+                        <Realmwalker.UI.Controls.SkillButton name="skill-button-3"
+                                                             class="skill-button combat-skill-button"/>
+                        <Realmwalker.UI.Controls.SkillDetail name="skill-detail-3" picking-mode="Ignore"
+                                                             class="skill-detail"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="button-group-4" class="button-group">
+                        <Realmwalker.UI.Controls.SkillButton name="skill-button-4"
+                                                             class="skill-button combat-skill-button"/>
+                        <Realmwalker.UI.Controls.SkillDetail name="skill-detail-4" picking-mode="Ignore"
+                                                             class="skill-detail"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="character-icon-panel" class="icon-panel"
+                              style="background-image: none; background-color: rgba(0, 0, 0, 0.39); margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; width: 150px; height: 150px; border-left-width: 0; border-right-width: 5px; border-top-width: 5px; border-bottom-width: 0; justify-content: flex-start; align-items: center; padding-top: 20px; flex-direction: column; padding-left: 20px; padding-right: 20px; padding-bottom: 20px; border-left-color: rgb(2, 2, 2); border-right-color: rgb(2, 2, 2); border-top-color: rgb(2, 2, 2); border-bottom-color: rgb(2, 2, 2); border-bottom-left-radius: 0; border-top-left-radius: 0; border-bottom-right-radius: 0; border-top-right-radius: 30px;">
+                <Realmwalker.UI.Controls.Icon name="character-icon"
+                                              style="flex-grow: 0; width: 70px; height: 70px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; background-image: none; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; position: relative; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-width: 4px; border-right-width: 4px; border-top-width: 4px; border-bottom-width: 4px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; background-color: rgb(48, 48, 48);"/>
+                <ui:Label text="Name" display-tooltip-when-elided="true" name="character-name-label"
+                          style="margin-top: 7px; font-size: 15px;"/>
+            </ui:VisualElement>
+            <ui:Button text="End turn" display-tooltip-when-elided="true" name="end-turn-button"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

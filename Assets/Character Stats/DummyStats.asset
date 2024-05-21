@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5d5e3a4577010d46bd6795dadd78c50, type: 3}
+  m_Name: DummyStats
+  m_EditorClassIdentifier: 
+  characterName: Herry
+  maxHealth: 1000
+  damage: 13
+  portrait: {fileID: -3731234309461647581, guid: f0a14dc7546615148a922a86e10aa56f, type: 3}
+  skillStats:
+  - {fileID: 11400000, guid: 7a1176dce290f8449a4175625e482c48, type: 2}
+  - {fileID: 11400000, guid: a21d476d61e61da49b7e5bdad70e85da, type: 2}
+  - {fileID: 11400000, guid: efe1a39947e7fce4bb623795eb767e14, type: 2}
+  - {fileID: 11400000, guid: 7dc84bca420bc3342b12b0d16b2ea2f0, type: 2}

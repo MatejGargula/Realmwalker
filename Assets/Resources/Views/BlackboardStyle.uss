@@ -1,0 +1,120 @@
+.blackboard-property-name {
+    min-width: 120px;
+}
+
+.blackboard-property-value {
+    flex-grow: 1;
+}
+
+.blackboard-property-delete-button {
+    width: 30px;
+}
+
+.blackboard-property-root {
+    flex-direction: row;
+    margin: 10px;
+    background-color: black;
+    border-width: 2px;
+    border-color: dimgrey;
+}
+
+#blackboard-title-label {
+    -unity-text-align: upper-center;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#blackboard-title-label-panel {
+    background-color: rgb(41, 41, 41);
+}
+
+.select-properties-list-button {
+    flex-grow: 1;
+    flex-direction: column;
+    white-space: normal;
+    background-color: rgb(26, 26, 26);
+    font-size: 10px;
+    transition-duration: 0.2s;
+}
+
+.blackboard-property-list {
+    width: 100%;
+    height: 100%;
+}
+
+.active-select-button {
+    background-color: rgb(108, 108, 108);
+    border-left-color: rgb(118, 118, 118);
+    border-right-color: rgb(118, 118, 118);
+    border-top-color: rgb(118, 118, 118);
+    border-bottom-color: rgb(118, 118, 118);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+.select-properties-list-button:hover {
+    background-color: rgb(60, 60, 60);
+    border-left-color: rgb(106, 106, 106);
+    border-right-color: rgb(106, 106, 106);
+    border-top-color: rgb(106, 106, 106);
+    border-bottom-color: rgb(106, 106, 106);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+.unity-button {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.active-select-button:hover {
+}
+
+.balckboard-list-header {
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.blackboard-list-header-name {
+    flex-grow: 1;
+    -unity-text-align: middle-left;
+    -unity-font-style: bold;
+    height: 35px;
+    font-size: 16px;
+}
+
+.blackboard-list-header-create-button {
+    position: absolute;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 25px;
+    height: 25px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    font-size: 17px;
+    -unity-text-align: middle-center;
+    margin-left: 0;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 9px;
+    top: 0;
+    right: 0;
+}

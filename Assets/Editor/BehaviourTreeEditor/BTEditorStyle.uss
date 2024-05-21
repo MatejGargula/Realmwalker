@@ -1,0 +1,52 @@
+.unity-collection-view__item--selected {
+    background-color: rgba(63, 63, 63, 255);
+}
+
+.tree-list-root {
+    flex-direction: column;
+    align-self: flex-end;
+    width: auto;
+}
+
+.list-element-root {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    flex-direction: row;
+    padding-left: 2px;
+    padding-right: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    width: 100%;
+}
+
+.list-element-label {
+    -unity-text-align: middle-left;
+    color: rgb(255, 255, 255);
+    width: 87%;
+    font-size: 12px;
+    -unity-font-style: normal;
+    white-space: normal;
+}
+
+.list-element-button {
+}
+
+/*#property-name{*/
+/*    flex-wrap: wrap;*/
+/*}*/
+
+/*#property-value{*/
+/*    flex-wrap: wrap;*/
+/*}*/
+
+#property-root {
+    flex-wrap: wrap;
+}

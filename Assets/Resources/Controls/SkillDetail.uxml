@@ -1,0 +1,56 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance"
+         engine="UnityEngine.UIElements" editor="UnityEditor.UIElements"
+         noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/Controls/SkillDetailStyle.uss?fileID=7433441132597879392&amp;guid=061e04a38ea54e345b654dcba8ccf55f&amp;type=3#SkillDetailStyle"/>
+    <ui:VisualElement name="detail-root" class="detail-root">
+        <ui:VisualElement name="detail-panel">
+            <ui:VisualElement name="top" class="detail-panel">
+                <ui:VisualElement style="flex-direction: row;">
+                    <Realmwalker.UI.Controls.Icon name="skill-icon" class="detail-icon"/>
+                    <ui:Label text="Skill name" display-tooltip-when-elided="true" name="skill-name"
+                              class="detail-title"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="skill-description-panel" class="detail-panel detail-description-panel">
+                <ui:Label text="Desciption: " display-tooltip-when-elided="true" class="description-label"/>
+                <ui:Label text="aaibsdfp baspdifub as bdfius badfiu" display-tooltip-when-elided="true"
+                          name="skill-description" class="description"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="skill-properties" class="detail-properties-panel">
+                <ui:VisualElement name="speed-property" class="detail-property-panel">
+                    <ui:Label text="Speed:" display-tooltip-when-elided="true" name="property-name"
+                              class="detail-label-left" style="-unity-font-style: bold;"/>
+                    <ui:Label text="100" display-tooltip-when-elided="true" name="speed-label"
+                              class="detail-label-right"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="cooldown-property" class="detail-property-panel">
+                    <ui:Label text="Cooldown:" display-tooltip-when-elided="true" name="property-name"
+                              class="detail-label-left" style="-unity-font-style: bold;"/>
+                    <ui:Label text="100" display-tooltip-when-elided="true" name="cooldown-label"
+                              class="detail-label-right"/>
+                </ui:VisualElement>
+
+                <ui:VisualElement name="damage-property" class="detail-property-panel">
+                    <ui:Label text="Damage:" display-tooltip-when-elided="true" name="property-name"
+                              class="detail-label-left" style="-unity-font-style: bold;"/>
+                    <ui:Label text="100" display-tooltip-when-elided="true" name="damage-label"
+                              class="detail-label-right"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="number-of-attacks-property" class="detail-property-panel">
+                    <ui:Label text="Number of Attacks:" display-tooltip-when-elided="true" name="property-name"
+                              class="detail-label-left" style="-unity-font-style: bold;"/>
+                    <ui:Label text="100" display-tooltip-when-elided="true" name="number-of-attacks-label"
+                              class="detail-label-right"/>
+                </ui:VisualElement>
+
+                <ui:VisualElement name="heal-property" class="detail-property-panel">
+                    <ui:Label text="Heal amount:" display-tooltip-when-elided="true" name="property-name"
+                              class="detail-label-left" style="-unity-font-style: bold;"/>
+                    <ui:Label text="100" display-tooltip-when-elided="true" name="heal-label"
+                              class="detail-label-right"/>
+                </ui:VisualElement>
+
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

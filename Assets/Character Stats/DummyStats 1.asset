@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5d5e3a4577010d46bd6795dadd78c50, type: 3}
+  m_Name: DummyStats 1
+  m_EditorClassIdentifier: 
+  characterName: Jerry
+  maxHealth: 100
+  damage: 10
+  portrait: {fileID: -4599017874624594325, guid: f0a14dc7546615148a922a86e10aa56f, type: 3}
+  skillStats:
+  - {fileID: 11400000, guid: 66725bdb0a3214049aa54b184f7fbb70, type: 2}
+  - {fileID: 11400000, guid: 0ae1975a1734a31469cbf3327782c4b8, type: 2}
+  - {fileID: 11400000, guid: 06c2bb2c1c224e849bc35f864ba68f10, type: 2}
+  - {fileID: 11400000, guid: c16221a8fef535c42b48972b5b6eabd7, type: 2}

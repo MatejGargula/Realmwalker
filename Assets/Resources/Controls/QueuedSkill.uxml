@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance"
+         engine="UnityEngine.UIElements" editor="UnityEditor.UIElements"
+         noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/Controls/QueuedSkillStyle.uss?fileID=7433441132597879392&amp;guid=0670ea913a9bac04d8f147fb5b5839dc&amp;type=3#QueuedSkillStyle"/>
+    <ui:VisualElement name="queued-skill-icons"
+                      style="flex-direction: row; align-items: center; justify-content: center;">
+        <Realmwalker.UI.Controls.Icon name="source" class="queued-skill-icon"
+                                      style="height: 100%; flex-grow: 1; flex-direction: row;"/>
+        <Realmwalker.UI.Controls.Icon name="queued-skill-icon" class="queued-skill-icon"
+                                      style="height: 100%; flex-grow: 1; flex-direction: row;"/>
+        <Realmwalker.UI.Controls.Icon name="target" class="queued-skill-icon"
+                                      style="height: 100%; flex-grow: 1; flex-direction: row;"/>
+    </ui:VisualElement>
+    <ui:VisualElement name="queued-skill-detail" style="position: absolute;"/>
+</ui:UXML>

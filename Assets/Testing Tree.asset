@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4925391330048424132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9553a3fbb3a7c4142929fea4925b9617, type: 3}
+  m_Name: Root
+  m_EditorClassIdentifier: 
+  state: 0
+  isRunning: 0
+  hasRun: 0
+  guid: d1d557b3fa4a74c4c857dad060b22080
+  position: {x: -7.2506742, y: 140.09198}
+  blackboard:
+    numericProperties: []
+    boolProperties: []
+    stringProperties: []
+    vector3Properties: []
+    gameObjectProperties: []
+  nodeTitle: Root
+  description: Root node of the behaviour tree
+  child: {fileID: 7595788600522981519}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 672cf795ed7d9d34cb64f2df1aa167f7, type: 3}
+  m_Name: Testing Tree
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: -4925391330048424132}
+  treesState: 0
+  nodes:
+  - {fileID: -4925391330048424132}
+  - {fileID: 5352853874011258235}
+  - {fileID: 7595788600522981519}
+  blackboard:
+    numericProperties: []
+    boolProperties: []
+    stringProperties: []
+    vector3Properties: []
+    gameObjectProperties: []
+--- !u!114 &5352853874011258235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 665a045599586ea478b9afdf0bc9a333, type: 3}
+  m_Name: Selector
+  m_EditorClassIdentifier: 
+  state: 0
+  isRunning: 0
+  hasRun: 0
+  guid: 3307552e6b3ef6f4fa7f85948caf20fb
+  position: {x: 1.7492776, y: 497.09198}
+  blackboard:
+    numericProperties: []
+    boolProperties: []
+    stringProperties: []
+    vector3Properties: []
+    gameObjectProperties: []
+  nodeTitle: Selector
+  description: Runs each child. Returns SUCCESS on the first child SUCCESS
+  children: []
+--- !u!114 &7595788600522981519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87a3346170b0fc4a8807712fb5c4dd1, type: 3}
+  m_Name: Repeat
+  m_EditorClassIdentifier: 
+  state: 0
+  isRunning: 0
+  hasRun: 0
+  guid: 52f423568f8778f4f8446633d24c4001
+  position: {x: 1.7492776, y: 329.09198}
+  blackboard:
+    numericProperties: []
+    boolProperties: []
+    stringProperties: []
+    vector3Properties: []
+    gameObjectProperties: []
+  nodeTitle: Repeat
+  description: Runs it's child in an infinite loop
+  child: {fileID: 5352853874011258235}

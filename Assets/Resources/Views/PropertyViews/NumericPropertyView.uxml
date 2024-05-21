@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements"
+         xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements"
+         noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Resources/Views/PropertyViews/PropertyStyle.uss?fileID=7433441132597879392&amp;guid=5499b0db92477dc4c81f1dab1b4d2f58&amp;type=3#PropertyStyle"/>
+    <ui:VisualElement name="property-root" class="property-root-container">
+        <ui:Label display-tooltip-when-elided="true" name="property-name" class="property-name-label"/>
+        <ui:Label text=":" display-tooltip-when-elided="true" style="-unity-text-align: middle-left;"/>
+        <uie:FloatField value="0" name="property-value" class="property-value-field"/>
+    </ui:VisualElement>
+</ui:UXML>
